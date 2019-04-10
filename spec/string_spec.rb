@@ -14,6 +14,10 @@ RSpec.describe StringCalculator do
     it ' will return the sum of two numbers, 1 and 2' do
       expect(subject.add("1,2")).to eq(3)
     end
+
+    it ' will return the sum of many numbers' do
+      expect(subject.add("1,2,3,4,5")).to eq(15)
+    end
   end
 
 end
