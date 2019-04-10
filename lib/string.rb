@@ -1,7 +1,11 @@
 class StringCalculator
 
   def add(string)
-    0
+    if string == ""
+      0
+    else
+      1
+    end
   end
 
 end
