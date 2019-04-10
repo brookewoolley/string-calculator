@@ -22,6 +22,10 @@ RSpec.describe StringCalculator do
     it ' will handle new lines between numbers' do
       expect(subject.add('1\n2,3')).to eq(6)
     end
+
+    it ' will handle delimiters' do
+      expect(subject.add('//;\n1;2')).to eq(3)
+    end
   end
 
 end

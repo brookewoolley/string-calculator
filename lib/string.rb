@@ -4,7 +4,7 @@ class StringCalculator
     if string == ""
       0
     else
-      array = string.gsub(/[\\n]/, ',').split(',')
+      array = string.split(/[\s;\\n,]/)
       new = array.map do |x|
         x.to_i
       end
