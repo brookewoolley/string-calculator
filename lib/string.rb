@@ -4,8 +4,11 @@ class StringCalculator
     if string == ""
       0
     else
-      1
+      array = string.split(",")
+      new = array.map do |x|
+        x.to_i
+      end
+      result = new.inject(:+)
     end
   end
-
 end
